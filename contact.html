@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontaktseite von Bildung für Kinder in Uganda e.V. mit Vereinsanschrift, Anfrageinformationen und statischer Kontaktformular-Oberfläche."
+      data-en="Contact page for Bildung für Kinder in Uganda e.V. with registered address, enquiry information, and a static contact form interface."
+    />
+    <title data-en="Contact | Bildung für Kinder in Uganda e.V.">Kontakt | Bildung für Kinder in Uganda e.V.</title>
+    <!-- Replace with real favicon later -->
+    <link rel="icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-en="Skip to main content">Zum Inhalt springen</a>
+    <form name="contact" netlify hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="organisation" />
+      <textarea name="message"></textarea>
+    </form>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="assets/images/logo-bildung-fuer-kinder-uganda-ev.png"
+            alt="Logo von Bildung für Kinder in Uganda e.V."
+          />
+          <span class="logo-text">Bildung für Kinder in Uganda e.V.</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-en="Menu">Menü</button>
+        <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+          <a href="index.html" data-en="Home">Start</a>
+          <a href="about.html" data-en="About">Über uns</a>
+          <a href="our-work.html" data-en="Our Work">Unsere Arbeit</a>
+          <a href="bavaria-schools.html">Bavaria Schools Uganda</a>
+          <a href="current-needs.html" data-en="Current Needs">Aktueller Bedarf</a>
+          <a href="transparency.html" data-en="Transparency">Transparenz</a>
+          <a href="contact.html" data-en="Contact">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="privacy.html" data-en="Privacy">Datenschutz</a>
+        </nav>
+        <div class="lang-switcher" aria-label="Sprachauswahl">
+          <button class="lang-btn active" type="button" data-lang="de">DE</button><span>|</span><button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow" data-en="Contact">Kontakt</p>
+          <h1 data-en="General enquiries and partnership contact">Allgemeine Anfragen und Kontakt</h1>
+          <p data-en="We welcome enquiries from foundations, partner schools, and organisations interested in supporting educational access and infrastructure development.">
+            Wir freuen uns über Anfragen von Stiftungen, Partnerschulen und Organisationen, die
+            Bildungszugang und Infrastrukturentwicklung unterstützen möchten.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <div>
+            <h2 data-en="Contact Details">Kontaktdaten</h2>
+            <p><strong data-en="Organisation:">Organisation:</strong> Bildung für Kinder in Uganda e.V.</p>
+            <p><strong data-en="Contact by email:">Kontakt per E-Mail:</strong> <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a></p>
+            <p><strong data-en="Phone:">Telefon:</strong> <a href="tel:+491782133627">+49 178 2133627</a></p>
+            <p data-en="For general enquiries, please use the contact details listed here or the form on this page. We aim to respond as promptly as possible.">
+              Für allgemeine Anfragen nutzen Sie bitte die hier genannten Kontaktdaten oder das
+              Formular auf dieser Seite. Wir antworten zeitnah und verlässlich.
+            </p>
+          </div>
+          <div class="panel">
+            <h3 data-en="Registered Address">Vereinsanschrift</h3>
+            <p class="address">
+              Am Haag 1<br />
+              97631 Bad Königshofen<br />
+              Deutschland
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2 data-en="Contact Form">Kontaktformular</h2>
+          <p data-en="You can use this form to send us your enquiry directly.">
+            Über dieses Formular können Sie uns Ihre Anfrage direkt übermitteln.
+          </p>
+          <form
+            class="form-grid"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/thank-you.html"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <label for="name">Ihr Name</label>
+            <input id="name" type="text" name="name" required />
+
+            <label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" required />
+
+            <label for="organisation">Organisation</label>
+            <input id="organisation" type="text" name="organisation" />
+
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+          </form>
+          <p data-en="Thank you for your message. We will respond as quickly as possible.">
+            Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.
+          </p>
+          <p data-en="Alternatively, you can reach us directly by email at verenamonika28@web.de or by phone at +49 178 2133627.">
+            Alternativ erreichen Sie uns direkt per E-Mail unter
+            <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a>
+            oder telefonisch unter <a href="tel:+491782133627">+49 178 2133627</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2 data-en="Partnership and Foundation Enquiries">Anfragen von Partnern und Stiftungen</h2>
+          <p data-en="For institutional partnerships or foundation enquiries, please include your organization details, area of interest, and preferred form of cooperation.">
+            Für institutionelle Partnerschaften oder Stiftungsanfragen nennen Sie bitte Ihre
+            Organisation, den Interessensbereich und die gewünschte Form der Zusammenarbeit.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>
+            <img
+              class="footer-logo"
+              src="assets/images/logo-bildung-fuer-kinder-uganda-ev.png"
+              alt="Logo von Bildung für Kinder in Uganda e.V."
+            />
+            Bildung für Kinder in Uganda e.V.
+          </strong>
+          <p data-en="Am Haag 1, 97631 Bad Königshofen, Germany">Am Haag 1, 97631 Bad Königshofen, Deutschland</p>
+          <ul class="footer-links">
+            <li><a href="index.html" data-en="Home">Start</a></li>
+            <li><a href="about.html" data-en="About">Über uns</a></li>
+            <li><a href="our-work.html" data-en="Our Work">Unsere Arbeit</a></li>
+            <li><a href="bavaria-schools.html">Bavaria Schools Uganda</a></li>
+            <li><a href="current-needs.html" data-en="Current Needs">Aktueller Bedarf</a></li>
+            <li><a href="transparency.html" data-en="Transparency">Transparenz</a></li>
+            <li><a href="contact.html" data-en="Contact">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="privacy.html" data-en="Privacy">Datenschutz</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Amtsgericht Schweinfurt · VR 201020 · §60a AO</p>
+          <p class="footer-note" data-en="Registered association in Germany (e.V.) · Transparency information available">Eingetragener Verein in Deutschland (e.V.) · Transparenzinformationen verfügbar</p>
+          <p class="footer-note">E-Mail: <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a></p>
+          <p class="footer-note">Telefon: <a href="tel:+491782133627">+49 178 2133627</a></p>
+          <p>© 2026 Bildung für Kinder in Uganda e.V.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
