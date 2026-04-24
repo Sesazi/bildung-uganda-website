@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kontaktseite von Bildung für Kinder in Uganda e.V. mit Vereinsanschrift, Anfrageinformationen und statischer Kontaktformular-Oberfläche."
-      data-en="Contact page for Bildung für Kinder in Uganda e.V. with registered address, enquiry information, and a static contact form interface."
+      content="Kontaktseite von Bildung für Kinder in Uganda e.V. mit direkten Kontaktdaten und Vereinsanschrift."
+      data-en="Contact page for Bildung für Kinder in Uganda e.V. with direct contact details and registered address."
     />
     <title data-en="Contact | Bildung für Kinder in Uganda e.V.">Kontakt | Bildung für Kinder in Uganda e.V.</title>
     <!-- Replace with real favicon later -->
@@ -15,12 +15,6 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-en="Skip to main content">Zum Inhalt springen</a>
-    <form name="contact" netlify hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="organisation" />
-      <textarea name="message"></textarea>
-    </form>
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="logo" href="index.html">
@@ -68,9 +62,9 @@
             <p><strong data-en="Organisation:">Organisation:</strong> Bildung für Kinder in Uganda e.V.</p>
             <p><strong data-en="Contact by email:">Kontakt per E-Mail:</strong> <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a></p>
             <p><strong data-en="Phone:">Telefon:</strong> <a href="tel:+491782133627">+49 178 2133627</a></p>
-            <p data-en="For general enquiries, please use the contact details listed here or the form on this page. We aim to respond as promptly as possible.">
-              Für allgemeine Anfragen nutzen Sie bitte die hier genannten Kontaktdaten oder das
-              Formular auf dieser Seite. Wir antworten zeitnah und verlässlich.
+            <p data-en="For project enquiries, funding enquiries, or partnerships, please contact us directly by email or phone.">
+              Für Projektanfragen, Förderanfragen oder Partnerschaften kontaktieren Sie uns bitte
+              direkt per E-Mail oder telefonisch.
             </p>
           </div>
           <div class="panel">
@@ -85,41 +79,14 @@
       </section>
 
       <section class="section section-alt">
-        <div class="container">
-          <h2 data-en="Contact Form">Kontaktformular</h2>
-          <p data-en="You can use this form to send us your enquiry directly.">
-            Über dieses Formular können Sie uns Ihre Anfrage direkt übermitteln.
-          </p>
-          <form
-            class="form-grid"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            action="/thank-you.html"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-
-            <label for="name">Ihr Name</label>
-            <input id="name" type="text" name="name" required />
-
-            <label for="email">E-Mail</label>
-            <input id="email" type="email" name="email" required />
-
-            <label for="organisation">Organisation</label>
-            <input id="organisation" type="text" name="organisation" />
-
-            <label for="message">Nachricht</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-
-            <button type="submit">Nachricht senden</button>
-          </form>
-          <p data-en="Thank you for your message. We will respond as quickly as possible.">
-            Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen.
-          </p>
-          <p data-en="Alternatively, you can reach us directly by email at verenamonika28@web.de or by phone at +49 178 2133627.">
-            Alternativ erreichen Sie uns direkt per E-Mail unter
-            <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a>
-            oder telefonisch unter <a href="tel:+491782133627">+49 178 2133627</a>.
+        <div class="container narrow">
+          <h2 data-en="Direct Contact">Direkter Kontakt</h2>
+          <p><strong data-en="Contact by email:">Kontakt per E-Mail:</strong> <a href="mailto:verenamonika28@web.de">verenamonika28@web.de</a></p>
+          <p><strong data-en="Phone:">Telefon:</strong> <a href="tel:+491782133627">+49 178 2133627</a></p>
+          <p><strong data-en="Address:">Adresse:</strong><br />Bildung für Kinder in Uganda e.V.<br />Am Haag 1<br />97631 Bad Königshofen<br />Deutschland</p>
+          <p data-en="For project enquiries, funding enquiries, or partnerships, please contact us directly by email or phone.">
+            Für Projektanfragen, Förderanfragen oder Partnerschaften kontaktieren Sie uns bitte
+            direkt per E-Mail oder telefonisch.
           </p>
         </div>
       </section>
